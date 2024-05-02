@@ -1,15 +1,16 @@
 ## Shady Shader
 
-This is a simple color picker that utilizes an API to fetch random colors, built with HTML, CSS and JavaScript.
+A simple color picker that display random colors from an API based on user input, built with HTML, CSS and JavaScript.
 
 ### Features
 
-- Random Color Generation
 - API Integration
+- Random Data Generation
 - User-Friendly Interface
 
 ### To-Do
 
+- Quick copy buttons
 - Some sort of animation
 - Responsive design
 - Further code optimization
@@ -26,7 +27,7 @@ Feel free to make any suggestions by creating an issue.
 
 ### Acknowledgments
 
-Special thanks to the team at [Color Names](https://github.com/meodai/color-names "Color Names") for providing the API that powers this project.
+Special thanks to the team at [Color Names](https://github.com/meodai/color-names "Color Names Repository") for providing the API that powers this project.
 
 ### Disclaimer
 
