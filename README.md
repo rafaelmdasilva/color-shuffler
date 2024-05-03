@@ -10,8 +10,8 @@ A simple color picker that display random colors from an API based on user input
 
 ### To-Do
 
-- Quick copy buttons
-- Some sort of animation
+- ~~Quick copy button~~
+- ~~Some sort of animation~~
 - Responsive design
 - Further code optimization
 
