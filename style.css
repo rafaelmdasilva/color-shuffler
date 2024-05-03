@@ -7,6 +7,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     background: linear-gradient(to bottom, #000000, #ffffff);
+    user-select: none;
 }
 
 #title {
@@ -38,7 +39,7 @@ button, #fetch {
     color: rgb(51, 51, 51);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     min-width: 300px;
@@ -46,11 +47,19 @@ button, #fetch {
 
 #result {
     font-size: 22px;
-    text-align: center;
+}
+
+#hex {
+    font-family: 'Inconsolata';
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#name {
+    user-select: text;
 }
 
 #attribution {
-    text-align: center;
     font-size: 12px;
 }
 
@@ -64,5 +73,24 @@ button, #fetch {
     margin-top: 5px;
     max-width: 12px;
     max-height: 12px;
-    user-select: none;
+}
+
+@keyframes wiggle {
+    0% {transform: translate(0, 0)}
+    25% {transform: translate(-2px, 0)}
+    50% {transform: translate(2px, 0)}
+    75% {transform: translate(-2px, 0)}
+    100% {transform: translate(0, 0)}
+}
+
+@keyframes pop {
+    50% {font-size: 30px}
+}
+
+.wiggle {
+    animation: wiggle 0.2s;
+}
+
+.pop {
+    animation: pop 0.2s;
 }
