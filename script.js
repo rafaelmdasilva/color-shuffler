@@ -12,18 +12,18 @@ const holderEle = document.createElement('p')
 
 nameEle.setAttribute('id', 'name')
 hexEle.setAttribute('id', 'hex')
-hexEle.style.fontFamily = 'Inconsolata'
-hexEle.style.textTransform = 'uppercase'
 
 holderEle.innerText = 'Go on. Give it a go.'
 buttonEle.innerText = 'Fetch!'
+resultEle.appendChild(nameEle)
+resultEle.appendChild(hexEle)
 resultEle.appendChild(holderEle)
 
 boxEle.style.transform = `translateY(-${titleEle.offsetHeight}px)`
 titleEle.style.transform = `translateY(-${boxEle.offsetHeight / 2}px)`
-//align elements
+//align elements vertically
 
-let parsed
+let parsed = undefined
 fetch(url)
     .then(response => { return response.json() })
     // fetch and parse data
@@ -34,16 +34,24 @@ buttonEle.addEventListener('click', () => {
     const parsedLength = Object.keys(parsed).length
     let random = Math.round(Math.random() * parsedLength)
     // caps random to object length
-
     holderEle.remove()
-    resultEle.appendChild(nameEle)
-    resultEle.appendChild(hexEle)
-
     nameEle.innerText = parsed[random].name
     hexEle.innerText = parsed[random].hex
     titleEle.innerText = nameEle.textContent
 
+    buttonEle.classList.add('pop')
+    setTimeout(() => { buttonEle.classList.remove('pop') }, 200);
     buttonEle.style.background = hexEle.textContent
     document.body.style.background = `linear-gradient(to bottom, ${hexEle.textContent}, #ffffff)`
 }
 )
+
+hexEle.addEventListener('click', () => {
+    navigator.clipboard.writeText(hexEle.textContent)
+    //copy hex to clipboard
+    hexEle.classList.add('wiggle')
+
+    setTimeout(() => {
+        hexEle.classList.remove('wiggle')
+    }, 200)
+})
