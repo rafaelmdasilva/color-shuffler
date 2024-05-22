@@ -39,8 +39,6 @@ buttonEle.addEventListener('click', () => {
     hexEle.innerText = parsed[random].hex
     titleEle.innerText = nameEle.textContent
 
-    buttonEle.classList.add('pop')
-    setTimeout(() => { buttonEle.classList.remove('pop') }, 200);
     buttonEle.style.background = hexEle.textContent
     document.body.style.background = `linear-gradient(to bottom, ${hexEle.textContent}, #ffffff)`
 }

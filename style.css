@@ -83,14 +83,6 @@ button, #fetch {
     100% {transform: translate(0, 0)}
 }
 
-@keyframes pop {
-    50% {font-size: 30px}
-}
-
 .wiggle {
     animation: wiggle 0.2s;
-}
-
-.pop {
-    animation: pop 0.2s;
 }
