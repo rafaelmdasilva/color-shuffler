@@ -19,10 +19,6 @@ resultEle.appendChild(nameEle)
 resultEle.appendChild(hexEle)
 resultEle.appendChild(holderEle)
 
-boxEle.style.transform = `translateY(-${titleEle.offsetHeight}px)`
-titleEle.style.transform = `translateY(-${boxEle.offsetHeight / 2}px)`
-//align elements vertically
-
 let parsed = undefined
 fetch(url)
     .then(response => { return response.json() })
@@ -40,7 +36,7 @@ buttonEle.addEventListener('click', () => {
     titleEle.innerText = nameEle.textContent
 
     buttonEle.style.background = hexEle.textContent
-    document.body.style.background = `linear-gradient(to bottom, ${hexEle.textContent}, #ffffff)`
+    document.body.style.background = hexEle.textContent
 }
 )
 
