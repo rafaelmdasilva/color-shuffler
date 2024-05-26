@@ -1,6 +1,6 @@
 ## Shady Shader
 
-A simple color randomizer that display curated colors from an API via user input, built with HTML, CSS and JavaScript.
+A simple color randomizer that display curated colors via user input, placing them in background.
 
 ### Features
 
@@ -27,7 +27,7 @@ Feel free to make any suggestions by creating an issue.
 
 ### Acknowledgments
 
-Special thanks to the team at [Color Names](https://github.com/meodai/color-names "Color Names Repository") for providing the API that powers this project.
+Special thanks to the team at [Color Names](https://github.com/meodai/color-names 'Color Names Repository') for providing the API that powers this project.
 
 ### Disclaimer
 
