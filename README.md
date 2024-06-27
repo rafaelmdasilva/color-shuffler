@@ -1,6 +1,6 @@
-## Shady Shader
+## Color Shuffler
 
-A simple color randomizer that display curated colors via user input, placing them in background.
+A simple color shuffler that display curated colors via user input, placing them in background.
 
 ### Features
 
@@ -17,9 +17,9 @@ A simple color randomizer that display curated colors via user input, placing th
 
 ### Live Demo
 
-[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://rafaelmdasilva.github.io/shady-shader-js/)
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://rafaelmdasilva.github.io/color-shuffler/)
 
-[![Page Preview](./images/preview.gif)](https://rafaelmdasilva.github.io/shady-shader-js/)
+[![Page Preview](./images/preview.gif)](https://rafaelmdasilva.github.io/color-shuffler/)
 
 ### Contributions
 
